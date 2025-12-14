@@ -1,0 +1,299 @@
+:root {
+  --primary-color: #00BAFF;
+  --glow: #7ADBFF;
+  --accent: #08FFE5;
+}
+
+body {
+    scroll-behavior:  auto;
+    font-size: 16px;
+    background-image: linear-gradient(to top right, #000C11, #000);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+svg {
+    width: 1em;
+    height: 1em;
+}
+nav {
+    z-index: 100;
+    display: flex;
+    width: 80vw;
+    border: 1px inset rgba(0, 185, 255, 0.7);
+    background-color: rgba(137, 206, 255, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    justify-content: space-evenly; 
+    align-items: center;
+    font-size: 2em;
+    padding: 0.15em 0;
+    border-radius: 20px;
+    top: 86%;
+    right: 10%;
+    box-shadow: 0px 0px 4px 0 white inset;
+}
+#profile {
+    margin-top: 20px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -20px;
+    
+}
+.name {
+    border: 1px outset lightsteelblue;
+    font-size: 1.2em;
+    height: fit-content;
+    text-align: center;
+    position:  absolute;
+    right: 38%;
+    top: 38%;
+    
+    height: fit-content;
+    width: 50%;
+    border-radius: 18px 0 18px 18px;
+    box-shadow: 1px 1px 4px 1px #A7A7A7 inset;
+    transform: skewX(-15deg);
+    padding: 5px;
+    background-color: #096A8D;
+   
+    animation: floating-name 1s linear 0.4s infinite alternate;
+}
+@keyframes floating-name {
+    from {
+        top: 36%;
+    }
+    to {
+        top: 39%;
+    }
+}
+.em {
+    color: var(--accent);
+    font-family: Georgia;
+    font-weight: bold;
+}
+.profileimg {
+    width: 12em;
+    height: 12em;
+    
+    object-fit: cover;
+    box-shadow: 0 0 5px 2px var(--glow);
+    border-radius: 50%;
+}
+
+.links {
+    margin-left: 23px;
+    margin-top: 10px;
+}
+.links a {
+    font-size: 1.2em;
+    margin: 2px;
+    box-shadow: 0 0 4px #2AD295;
+    border-radius: 50%;
+    padding: 5px 5px 2px 5px;
+    
+    text-align: center;
+}
+
+#heroSection {
+    width: 75vw;
+    margin: 20px;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CTAbtn {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 0.6em;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to top right, #08FFE5, #08FF64);
+    box-shadow: 1px 1px 3px 2px white ;
+}
+#CTAbtn:active {
+    transform: scale(0.9);
+    background-image: linear-gradient(to top right, #20B7A7, #24A253);
+}
+#skillSection {
+    position: relative;
+    margin-top: 10%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, black, #003F35 15%);
+}
+.bubble {
+    width: fit-content;
+    height: fit-content;
+    padding: 5em;
+    box-shadow: 0 0 5px white;
+    border-radius: 50%;
+    text-align: right;
+    background-image: linear-gradient(to top right, #2AAED2 5%, #2AD295);
+    box-shadow:
+    0 0 50px white inset,
+    1px 1px 8px white;
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: -60%;
+    margin-top: 15%;
+    
+}
+.bubble h2 {
+    position: relative;
+    left: 92%;
+    text-shadow: 0 0 3px #000;
+}
+.heading {
+    color: #D2FEFF;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-shadow: 0 0 2px black;
+}
+#skill1 {
+    position: absolute;
+    top: 16%;
+    right: 2%;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.skillImg {
+    display: flex;
+}
+.skillImg img {
+    width: 3.5em;
+}
+#js {
+    
+}
+.scalingAnimation {
+    box-shadow: 0 0 8px white inset;
+    border-radius: 50%;
+    padding: 5px;
+    animation: scaling 0.7s linear 0s infinite alternate;
+}
+@keyframes scaling {
+    from {
+        transform: scale(0.99);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+#skillParagraph {
+   
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 53%;
+    right: 3%;
+}
+#softSkillSection {
+    background-image: linear-gradient(to bottom, #003F35, black 15%);
+    
+    padding: 20px;
+}
+#softSkillSection table {
+    border-collapse: separate;
+    text-align: left;
+    border-left: 3px inset white;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-spacing: 20px 7px;
+}
+
+#otherSkills {
+   background-image: linear-gradient(to bottom, black, #001011 15%, #002F31);
+
+    padding: 20px;
+}
+.otherskill {
+    border-left: 4px inset white; 
+border-radius: 10px;
+padding: 1px 2px 4px 20px;
+box-shadow: -1px 1px 3px white;
+background-color: rgba(255, 255, 255, 0.16);
+margin-bottom: 20px;
+transition-duration: 0.5s;
+}
+.otherskill:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-left: 4px outset rgba(0, 246, 255, 1); 
+    box-shadow: -1px 1px 3px #00F6FF;
+    transform: scale(1.07);
+}
+
+meter {
+  width: 70%;
+  height: 2.4em;
+  appearance: none;
+  border-radius: 10px;
+}
+
+/* Chrome / Edge / Safari */
+meter::-webkit-meter-bar {
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(90deg, #3b82f6, #00FFD5);
+  border-radius: 5px;
+}
+
+/* Firefox */
+meter::-moz-meter-bar {
+  background: linear-gradient(90deg, #3b82f6, #00FFD5);
+  border-radius: 5px;
+}
+#meterSection {
+    
+padding: 20px;
+background-image: linear-gradient(to bottom, #002F31, black 15%);
+}
+.skillMeter {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.skillMeter label {
+    display: flex; 
+    flex-direction: column;
+}
+.percentage {
+    font-weight: bold;
+    font-family: Georgia;
+    margin: 5px;
+    font-size: 1.3em;
+}
+.skillname {
+    font-size: 0.8em;
+    
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+.page {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px aliceblue inset;
+    border-radius: 50%;
+    padding: 2px 5px;
+    
+}
